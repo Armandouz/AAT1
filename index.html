@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog de Noticias Tecnológicas</title>
+
+  <!-- CSS BÁSICO EN BLOQUE -->
+  <style>
+    body{ margin:0; font-family: Arial, Helvetica, sans-serif; background:#f4f6f9; color:#1f2a37; }
+    header{ background:#0b3a73; color:white; padding:22px; }
+    nav{ background:#0e4a8f; padding:10px; }
+    nav a{ color:white; text-decoration:none; margin-right:12px; padding:8px 10px; display:inline-block; }
+    nav a:hover{ background:#0b3a73; }
+    .contenedor{ width:92%; max-width:1100px; margin:18px auto; }
+    .grid{ display:flex; gap:18px; }
+    .principal{ flex:2; }
+    .lateral{ flex:1; }
+    .tarjeta{ background:white; border:1px solid #d9e2ef; border-radius:8px; padding:14px; margin-bottom:16px; }
+    .etiqueta{ display:inline-block; background:#e6f0ff; color:#0b3a73; padding:4px 10px; border-radius:14px; font-size:12px; }
+    img{ max-width:100%; border-radius:8px; }
+    table{ width:100%; border-collapse:collapse; font-size:14px; }
+    th, td{ border:1px solid #d9e2ef; padding:8px; text-align:left; }
+    th{ background:#f1f6ff; }
+    footer{ background:#0b3a73; color:white; padding:18px 0; margin-top:24px; }
+    footer a{ color:white; text-decoration:none; }
+    .mini{ font-size:12px; opacity:.9; }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1 style="margin:0; font-size:34px; text-align:center;">Blog de Noticias Tecnológicas</h1>
+    <p style="margin:8px 0 0; text-align:center; font-size:16px;">
+      Las últimas noticias y novedades del mundo de la tecnología.
+    </p>
+  </header>
+
+  <!-- NAV -->
+  <nav style="text-align:center;">
+    <a href="#inicio" style="background:#0b3a73; border-radius:6px;">Inicio</a>
+    <a href="#gadgets">Gadgets</a>
+    <a href="#desarrollo">Desarrollo</a>
+    <a href="#ia">IA</a>
+    <a href="#software">Software</a>
+    <a href="#comparativas">Comparativas</a>
+    <a href="img/Imgmockup.png" download style="background:#d9534f; border-radius:6px;">Mockup</a>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="contenedor" id="inicio">
+    <div class="grid">
+
+      <!-- COLUMNA PRINCIPAL -->
+      <section class="principal">
+
+        <!-- ARTÍCULO 1 -->
+        <article class="tarjeta" id="ia">
+          <span class="etiqueta" style="background:#d9f7ff; color:#075985;">IA</span>
+          <h2 style="margin:10px 0 8px;">Avances en Inteligencia Artificial para 2026</h2>
+
+          <img
+            src="img/A1.avif"
+            alt="Inteligencia artificial"
+            style="border:2px solid #e5eefb;"
+          />
+
+          <p style="line-height:1.5; font-size:15px;">
+            Descubre los últimos desarrollos en el campo de la inteligencia artificial y cómo impactan la educación,
+            la industria y el software.
+          </p>
+          <p class="mini" style="margin:0; color:#475569;">Publicado el 12 de febrero de 2026</p>
+
+          <!-- VIDEO (multimedia) -->
+          <h3 style="margin:14px 0 8px; font-size:16px;">Video rápido</h3>
+          <video controls width="100%" style="border:1px solid #d9e2ef; border-radius:8px;">
+            <source src="videos/A1.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+          </video>
+        </article>
+
+        <!-- ARTÍCULO 2 -->
+        <article class="tarjeta" id="gadgets">
+          <span class="etiqueta" style="background:#fff7ed; color:#9a3412;">Gadgets</span>
+          <h2 style="margin:10px 0 8px;">Review del Smartphone X10 Pro</h2>
+
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <img
+              src="img/A2.avif"
+              alt="Smartphone"
+              style="width:180px; border:1px solid #d9e2ef;"
+            />
+
+            <p style="margin:0; line-height:1.5; font-size:15px;">
+              Analizamos características clave: cámara, rendimiento, batería y pantalla.
+              Ideal si quieres comparar antes de comprar.
+              <br><br>
+              <span class="mini" style="color:#475569;">Publicado el 11 de febrero de 2026</span>
+            </p>
+          </div>
+        </article>
+
+        <!-- ARTÍCULO 3 -->
+        <article class="tarjeta" id="software">
+          <span class="etiqueta" style="background:#ecfccb; color:#3f6212;">Software</span>
+          <h2 style="margin:10px 0 8px;">Cómo instalar Ubuntu paso a paso</h2>
+
+          <img
+            src="img/A3.jpg"
+            alt="Laptop y software"
+            style="border:2px solid #e5eefb;"
+          />
+
+          <p style="line-height:1.5; font-size:15px;">
+            Guía rápida para instalar Ubuntu en tu computadora: preparación, instalación y primeros pasos.
+          </p>
+          <p class="mini" style="margin:0; color:#475569;">Publicado el 10 de febrero de 2026</p>
+        </article>
+
+      </section>
+
+      <!-- ASIDE / LATERAL -->
+      <aside class="lateral">
+
+        <!-- LISTA (ul) -->
+        <section class="tarjeta">
+          <h3 style="margin:0 0 10px; text-align:left;">Categorías</h3>
+          <ul style="margin:0; padding-left:18px; line-height:1.8;">
+            <li><a href="#gadgets" style="color:#0b3a73; text-decoration:none;">Gadgets</a></li>
+            <li><a href="#desarrollo" style="color:#0b3a73; text-decoration:none;">Desarrollo</a></li>
+            <li><a href="#ia" style="color:#0b3a73; text-decoration:none;">Inteligencia Artificial</a></li>
+            <li><a href="#software" style="color:#0b3a73; text-decoration:none;">Software</a></li>
+            <li><a href="#comparativas" style="color:#0b3a73; text-decoration:none;">Comparativas</a></li>
+          </ul>
+
+          <p style="margin:12px 0 0; text-align:center;">
+            <a href="#inicio" style="background:#0b3a73; color:white; padding:10px 14px; border-radius:6px; display:inline-block;">
+              Ver todas
+            </a>
+          </p>
+        </section>
+
+        <!-- TABLA (table) -->
+        <section class="tarjeta" id="comparativas">
+          <h3 style="margin:0 0 10px;">Comparativa de Smartphones</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Característica</th>
+                <th>Modelo A</th>
+                <th>Modelo B</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pantalla</td>
+                <td>6.5"</td>
+                <td>6.7"</td>
+              </tr>
+              <tr>
+                <td>Cámara</td>
+                <td>48 MP</td>
+                <td>50 MP</td>
+              </tr>
+              <tr>
+                <td>Procesador</td>
+                <td>Snapdragon 8</td>
+                <td>Dimensity 9200</td>
+              </tr>
+              <tr>
+                <td>Batería</td>
+                <td>4000 mAh</td>
+                <td>4500 mAh</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin:12px 0 0; text-align:center;">
+            <a href="#comparativas" style="background:#0e4a8f; color:white; padding:10px 14px; border-radius:6px; display:inline-block;">
+              Ver comparativas
+            </a>
+          </p>
+        </section>
+
+        <!-- SECCIÓN EXTRA para cumplir con "section" en aside -->
+        <section class="tarjeta" id="desarrollo">
+          <h3 style="margin:0 0 10px;">Tip rápido</h3>
+          <p style="margin:0; line-height:1.5;">
+            En desarrollo web, usa etiquetas semánticas para que tu sitio sea más ordenado y fácil de mantener.
+          </p>
+        </section>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="contenedor" style="display:flex; gap:18px; flex-wrap:wrap;">
+      <section style="flex:1; min-width:220px;">
+        <h4 style="margin:0 0 10px;">Enlaces</h4>
+        <p style="margin:6px 0;"><a href="#inicio">Inicio</a></p>
+        <p style="margin:6px 0;"><a href="#gadgets">Gadgets</a></p>
+        <p style="margin:6px 0;"><a href="#software">Software</a></p>
+      </section>
+
+      <section style="flex:1; min-width:220px;">
+        <h4 style="margin:0 0 10px;">Redes Sociales</h4>
+        <p style="margin:6px 0;">Facebook • X • LinkedIn</p>
+</p>
+      </section>
+
+      <section style="flex:1; min-width:220px;">
+        <h4 style="margin:0 0 10px;">Legal</h4>
+        <p style="margin:6px 0;"><a href="#">Política de Privacidad</a></p>
+        <p style="margin:6px 0;"><a href="#">Términos de uso</a></p>
+        <p style="margin:6px 0;"><a href="#">Contacto</a></p>
+      </section>
+    </div>
+
+    <div class="contenedor" style="border-top:1px solid rgba(255,255,255,.25); padding-top:12px; text-align:center;">
+      <p style="margin:0;" class="mini">© 2026 Blog de Noticias Tecnológicas. Todos los derechos reservados Armando de León.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
